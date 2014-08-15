@@ -1,7 +1,7 @@
 #
 # Ubuntu Dockerfile
 #
-# https://github.com/dockerfile/ubuntu
+# https://github.com/joecliff/docker-ubuntu
 #
 
 # Pull base image.
@@ -12,9 +12,8 @@ RUN \
   sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
   apt-get update && \
   apt-get -y upgrade && \
-  apt-get install -y build-essential && \
-  apt-get install -y software-properties-common && \
-  apt-get install -y byobu curl git htop man unzip vim wget
+  apt-get install -y g++ make unzip wget vim && \
+  apt-get install -y python git
 
 # Add files.
 ADD root/.bashrc /root/.bashrc

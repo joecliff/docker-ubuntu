@@ -1,18 +1,18 @@
 ## Ubuntu Dockerfile
 
 
-This repository contains **Dockerfile** of [Ubuntu](http://www.ubuntu.com/) for [Docker](https://www.docker.io/)'s [trusted build](https://index.docker.io/u/dockerfile/ubuntu/) published to the public [Docker Registry](https://index.docker.io/).
+Forked from [dockerfile/ubuntu]](https://github.com/dockerfile/ubuntu). Reduce the size by removing some packages.
 
 
 ### Installation
 
 1. Install [Docker](https://www.docker.io/).
 
-2. Download [trusted build](https://index.docker.io/u/dockerfile/ubuntu/) from public [Docker Registry](https://index.docker.io/): `docker pull dockerfile/ubuntu`
+2. Download from public [Docker Registry](https://index.docker.io/): `docker pull joecliff/docker-ubuntu`
 
-   (alternatively, you can build an image from Dockerfile: `docker build -t="dockerfile/ubuntu" github.com/dockerfile/ubuntu`)
+   (alternatively, you can build an image from Dockerfile: `docker build -t="joecliff/ubuntu" github.com/joecliff/docker-ubuntu`)
 
 
 ### Usage
 
-    docker run -it --rm dockerfile/ubuntu
+    docker run -it --rm joecliff/ubuntu

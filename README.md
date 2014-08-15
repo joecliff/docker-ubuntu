@@ -10,9 +10,9 @@ Forked from [dockerfile/ubuntu]](https://github.com/dockerfile/ubuntu). Reduce t
 
 2. Download from public [Docker Registry](https://index.docker.io/): `docker pull joecliff/docker-ubuntu`
 
-   (alternatively, you can build an image from Dockerfile: `docker build -t="joecliff/ubuntu" github.com/joecliff/docker-ubuntu`)
+   (alternatively, you can build an image from Dockerfile: `docker build -t="joecliff/docker-ubuntu" github.com/joecliff/docker-ubuntu`)
 
 
 ### Usage
 
-    docker run -it --rm joecliff/ubuntu
+    docker run -it --rm joecliff/docker-ubuntu
